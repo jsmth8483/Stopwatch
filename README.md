@@ -1,22 +1,25 @@
-#Stopwatch App
+# Stopwatch App
 
-##Description:
+## Description:
+
 This is a simple stopwatch app with a lap counter
 
-##Technologies
+## Technologies
+
 This project was created using:
 
 - HTML
 - CSS
 - JavaScript
 
-##Skills Strengthened:
+## Skills Strengthened:
 
 - JavaScript Syntax
 - JavaScript Events
 - ES6 Classes and Objects
 
-##Skills Learned:
+## Skills Learned:
+
 Some skills I picked up through the development of this application:
 
 - CSS Transitions and Animations
