@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+	font-weight: 400;
+}
+
+.time {
+	margin: 25px;
+	font-size: 2em;
+}
+
+.btn {
+	width: 200px;
+	margin: 10px;
+	font-size: 1.5em;
+	padding: 10px;
+	border: 1px solid black;
+	background: none;
+	position: relative;
+}
+
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lap-times {
+	width: 500px;
+	margin: 20px auto;
+	font-size: 24px;
+	border: 1px solid black;
+	padding: 30px;
+}
+
+.lap-times h2 {
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.lap-times ol {
+	padding: 0;
+}
+
+.lap-time-item {
+	display: flex;
+	flex: 1 0 33%;
+	justify-content: space-between;
+	justify-self: start;
+	animation-name: lap-time-row;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.lap-time-item span {
+	text-align: center;
+	width: 100px;
+	position: relative;
+}
+
+@keyframes lap-time-row {
+	0% {
+		top: -100px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+/* default color */
+.blue {
+	background-color: #7dffff;
+}
+/* turn red once time is greater than last lap */
+.red {
+	background-color: #f00000;
+}
+/* background green until time greater than last lap */
+.green {
+	background-color: #6aff00;
+}
+/*background orange while stopped (paused) */
+.orange {
+	background-color: orange;
+}
